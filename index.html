@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>[OM] Admissão</title>
+    <title>[OM] Admissão</title>
     <link href="https://i.imgur.com/Z8ibyqa.png" rel="icon" />
   <style>
     * {
@@ -246,6 +246,25 @@
         overflow: hidden;
       }
     }
+
+    ::-webkit-scrollbar {
+    width: 12px;
+    height: 12px; /* Para scrollbar horizontal também */
+}
+
+::-webkit-scrollbar-track {
+    background: #37544a; /* Cor mais clara que combina com o fundo */
+    border-radius: 0; /* Remover arredondamento */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #0d1412; /* Cor mais próxima ao fundo */
+    border-radius: 0; /* Tornando o thumb quadrado */
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #17231f; /* Cor suave para o hover */
+}
   </style>
 </head>
 <body>
@@ -268,14 +287,14 @@
   <h1>Selecione o seu dispositivo:</h1>
 
   <div class="card-group">
-    <div class="device-card" onclick="iniciarAula('mobile')">
-      <img src="https://i.imgur.com/qDYE5kx.png" alt="Acessar pelo celular">
-      <div class="device-label">Celular</div>
-    </div>
-
     <div class="device-card" onclick="iniciarAula('desktop')">
       <img class="computer" src="https://i.imgur.com/01Vfec0.png" alt="Acessar pelo computador">
       <div class="device-label">Computador</div>
+    </div>
+
+    <div class="device-card" onclick="iniciarAula('mobile')">
+      <img src="https://i.imgur.com/qDYE5kx.png" alt="Acessar pelo celular">
+      <div class="device-label">Celular</div>
     </div>
   </div>
 
